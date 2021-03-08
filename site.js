@@ -3,6 +3,7 @@ const msgForm = document.getElementById("send-container");
 const msgInput = document.getElementById("message-input");
 
 setTimeout(() => appendMessage("Alex", "Hi I'm Alex, a junior studying Computer Science at UC Berkeley! Text me to learn more about me!"), 250);
+setTimeout(() => appendMessage("Alex", "Things you can ask me: about, email, experience, photo, project, resume"), 250);
 
 msgForm.addEventListener("submit", e => {
     e.preventDefault();
@@ -16,10 +17,10 @@ msgForm.addEventListener("submit", e => {
         var finalMsg = noSpace.replace(/\s{2,}/g," ");
         switch (finalMsg) {
             case ("email"):
-                setTimeout(() => appendMessage("Alex", "This is my email: alexzclin@gmail.com! Feel free to send me anything!"), 250);
+                setTimeout(() => appendMessage("Alex", "Feel free to contact me or send me anything!\n", "mailto: alexzclin@gmail.com", "alexzclin@gmail.com"), 250);
                 break;
             case ("about"):
-                setTimeout(() => appendMessage("Alex", "You can find me here!"), 250);
+                setTimeout(() => appendMessage("Alex", "I am excited to experience anything related to software engineering! You can find me here:\n", "https://www.linkedin.com/in/alexzclin/", "LinkedIn"), 250);
                 break;
             case ("hi"):
                 setTimeout(() => appendMessage("Alex", "Hi! Thank you for visiting my website!"), 250);
@@ -30,6 +31,18 @@ msgForm.addEventListener("submit", e => {
             case ("iloveyou"):
                 setTimeout(() => appendMessage("Alex", "I love soap!"), 250);
                 break;
+            case ("photo"):
+                setTimeout(() => appendMessage("Alex", "Check out my photo series!\n", "https://alexlinaseries.wordpress.com/", "City of Stars - a series"), 250);
+                break;
+            case ("experience"):
+                setTimeout(() => appendMessage("Alex", "I am currently a software engineer intern at Xccelerate, an ed-tech startup. I work on projects for the full-stack software engineering bootcamp and work with code in JavaScript (Node.js/React), HTML, and CSS."), 250);
+                break;
+            case ("project"):
+                setTimeout(() => appendMessage("Alex", "2D-World Software Engineering Design Project (Java):\nI worked with a partner to create an engine that generates an explorable 2D tile-based world (RPG style)\n\nPintOS Operating System Project (C):\nI worked with a team to implement a simplified operating system. We collaborated through Git for code reviews and this helped me become familiar with the software development workflow."), 250);
+                break;
+            case ("resume"):
+                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1z-l_7QdSSsYGqpJankmJ-OB5HfYEG9lp/view?usp=sharing", "Resume"), 250);
+                break;
             default:
                 setTimeout(() => appendMessage("Alex", "Sorry what did you say?"), 250);
                 break;
@@ -37,7 +50,7 @@ msgForm.addEventListener("submit", e => {
     }
 })
 
-function appendMessage(sender, message) {
+function appendMessage(sender, message, link, linkTitle) {
     time = new Date().toLocaleTimeString([], {timeStyle: 'short'});
     const msgElement = document.createElement("div");
     if (sender == "Alex") {
@@ -46,6 +59,13 @@ function appendMessage(sender, message) {
         msgElement.setAttribute("class", "you-message");
     }
     msgElement.innerText = `${sender} ${time}\n${message}`;
+    if (link != null) {
+        var a = document.createElement("a");
+        a.innerHTML = linkTitle;  
+        a.href = link;
+        a.target = "_blank";
+        msgElement.appendChild(a);
+    }
     msgContainer.append(msgElement);
     msgContainer.scrollTop = msgContainer.scrollHeight;
 }
