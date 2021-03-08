@@ -28,6 +28,9 @@ msgForm.addEventListener("submit", e => {
             case ("hello"):
                 setTimeout(() => appendMessage("Alex", "Hello! Hope you are having a great day!"), 250);
                 break;
+            case ("hey"):
+                setTimeout(() => appendMessage("Alex", "Hey!"), 250);
+                break;
             case ("iloveyou"):
                 setTimeout(() => appendMessage("Alex", "I love soap!"), 250);
                 break;
