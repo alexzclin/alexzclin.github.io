@@ -20,7 +20,7 @@ msgForm.addEventListener("submit", e => {
                 setTimeout(() => appendMessage("Alex", "Feel free to contact me or send me anything!\n", "mailto: alexzclin@gmail.com", "alexzclin@gmail.com"), 250);
                 break;
             case ("about"):
-                setTimeout(() => appendMessage("Alex", "I am excited to experience anything related to software engineering! You can find me here:\n", "https://www.linkedin.com/in/alexzclin/", "LinkedIn"), 250);
+                setTimeout(() => appendMessage("Alex", "I am excited to work on anything related to software engineering! You can find me here:\n", "https://www.linkedin.com/in/alexzclin/", "LinkedIn"), 250);
                 break;
             case ("hi"):
                 setTimeout(() => appendMessage("Alex", "Hi! Thank you for visiting my website!"), 250);
