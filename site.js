@@ -3,7 +3,7 @@ const msgForm = document.getElementById("send-container");
 const msgInput = document.getElementById("message-input");
 
 setTimeout(() => appendMessage("Alex", "Hi I'm Alex, a junior studying Computer Science at UC Berkeley! Text me to learn more about me!"), 250);
-setTimeout(() => appendMessage("Alex", "Things you can ask me: about, email, experience, photo, project, resume"), 250);
+setTimeout(() => appendMessage("Alex", "Things you can ask me:\nabout, email, experience, photo, project, resume"), 250);
 
 msgForm.addEventListener("submit", e => {
     e.preventDefault();
