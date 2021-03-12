@@ -20,7 +20,7 @@ msgForm.addEventListener("submit", e => {
                 setTimeout(() => appendMessage("Alex", "Feel free to contact me or send me anything!\n", "mailto: alexzclin@gmail.com", "alexzclin@gmail.com"), 250);
                 break;
             case ("about"):
-                setTimeout(() => appendMessage("Alex", "I am excited to work on anything related to software engineering! You can find me here:\n", "https://www.linkedin.com/in/alexzclin/", "LinkedIn"), 250);
+                setTimeout(() => appendMessage("Alex", "I am excited to work on anything related to software engineering! You can find me here:\n", "https://www.linkedin.com/in/alexzclin/", "LinkedIn", "https://github.com/alexzclin/", "GitHub"), 250);
                 break;
             case ("hi"):
                 setTimeout(() => appendMessage("Alex", "Hi! Thank you for visiting my website!"), 250);
@@ -53,7 +53,7 @@ msgForm.addEventListener("submit", e => {
     }
 })
 
-function appendMessage(sender, message, link, linkTitle) {
+function appendMessage(sender, message, link, linkTitle, link2, link2Title) {
     time = new Date().toLocaleTimeString([], {timeStyle: 'short'});
     const msgElement = document.createElement("div");
     if (sender == "Alex") {
@@ -66,6 +66,15 @@ function appendMessage(sender, message, link, linkTitle) {
         var a = document.createElement("a");
         a.innerHTML = linkTitle;  
         a.href = link;
+        a.target = "_blank";
+        msgElement.appendChild(a);
+    }
+    if (link2 != null) {
+        var linebreak = document.createElement("br");
+        msgElement.appendChild(linebreak);
+        var a = document.createElement("a");
+        a.innerHTML = link2Title;  
+        a.href = link2;
         a.target = "_blank";
         msgElement.appendChild(a);
     }
