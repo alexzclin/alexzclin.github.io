@@ -56,14 +56,6 @@ h1 {
     color: lightgray;
 }
 
-#button-container {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    padding-bottom: n0px;
-    bottom: 0;
-}
-
 #send-container {
     position: fixed;
     padding-bottom: 30px;

@@ -2,8 +2,8 @@ const msgContainer = document.getElementById("message-container");
 const msgForm = document.getElementById("send-container");
 const msgInput = document.getElementById("message-input");
 
-setTimeout(() => appendMessage("Alex", "Hi I'm Alex, a junior studying Computer Science at UC Berkeley! Text me to learn more about me!"), 250);
-setTimeout(() => appendMessage("Alex", "Things you can ask me:\nabout, email, experience, photo, project, resume"), 250);
+setTimeout(() => appendMessage("Alex", "Hi I'm Alex, a senior studying Computer Science at UC Berkeley! Type below to learn more about me!"), 250);
+setTimeout(() => appendMessage("Alex", "Things you can ask me:\nabout, email, experience, photography, project, resume"), 250);
 
 msgForm.addEventListener("submit", e => {
     e.preventDefault();
@@ -34,20 +34,20 @@ msgForm.addEventListener("submit", e => {
             case ("iloveyou"):
                 setTimeout(() => appendMessage("Alex", "I love soap!"), 250);
                 break;
-            case ("photo"):
+            case ("photography"):
                 setTimeout(() => appendMessage("Alex", "Check out my photo series!\n", "https://alexlinaseries.wordpress.com/", "City of Stars - a series"), 250);
                 break;
             case ("experience"):
-                setTimeout(() => appendMessage("Alex", "I am currently a software engineer intern at Xccelerate, an ed-tech startup. I work on projects for the full-stack software engineering bootcamp and work with code in JavaScript (Node.js/React), HTML, and CSS."), 250);
+                setTimeout(() => appendMessage("Alex", "I was a software engineer intern at Walmart the summer of 2021. I was also an SWE intern before that at Xccelerate, an ed-tech startup. For Walmart I worked on the Location Management feature in the Own Your Inventory application used by associates in Sam's Clubs (China and Mexico market). For Xccelerate, I worked on projects for the full-stack software engineering bootcamp."), 250);
                 break;
             case ("project"):
                 setTimeout(() => appendMessage("Alex", "2D-World Software Engineering Design Project (Java):\nI worked with a partner to create an engine that generates an explorable 2D tile-based world (RPG style)\n\nPintOS Operating System Project (C):\nI worked with a team to implement a simplified operating system. We collaborated through Git for code reviews and this helped me become familiar with the software development workflow."), 250);
                 break;
             case ("resume"):
-                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1z-l_7QdSSsYGqpJankmJ-OB5HfYEG9lp/view?usp=sharing", "Resume"), 250);
+                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1BIlTsN3WgOwvl3Qrh2gLOQsKhYXdq9Ne/view?usp=sharing", "Resume"), 250);
                 break;
             default:
-                setTimeout(() => appendMessage("Alex", "Sorry what did you say?"), 250);
+                setTimeout(() => appendMessage("Alex", "Sorry what did you say? Try typing in a single word like \"hi\""), 250);
                 break;
         }
     }
