@@ -38,13 +38,13 @@ msgForm.addEventListener("submit", e => {
                 setTimeout(() => appendMessage("Alex", "Check out my photo series!\n", "https://alexlinaseries.wordpress.com/", "City of Stars - a series"), 250);
                 break;
             case ("experience"):
-                setTimeout(() => appendMessage("Alex", "I was a software engineer intern at Walmart the summer of 2021. I was also an SWE intern before that at Xccelerate, an ed-tech startup. For Walmart I worked on the Location Management feature in the Own Your Inventory application used by associates in Sam's Clubs (China and Mexico market). For Xccelerate, I worked on projects for the full-stack software engineering bootcamp."), 250);
+                setTimeout(() => appendMessage("Alex", "Walmart:\nI was a software engineer intern at Walmart the summer of 2021. I worked on the Location Management feature in the Own Your Inventory application used by associates in Sam's Clubs (China and Mexico market).\nXccelerate:\n Before Walmart, I was also a SWE intern at Xccelerate, an ed-tech startup. I worked on projects for the full-stack software engineering bootcamp."), 250);
                 break;
             case ("project"):
                 setTimeout(() => appendMessage("Alex", "2D-World Software Engineering Design Project (Java):\nI worked with a partner to create an engine that generates an explorable 2D tile-based world (RPG style)\n\nPintOS Operating System Project (C):\nI worked with a team to implement a simplified operating system. We collaborated through Git for code reviews and this helped me become familiar with the software development workflow."), 250);
                 break;
             case ("resume"):
-                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1BIlTsN3WgOwvl3Qrh2gLOQsKhYXdq9Ne/view?usp=sharing", "Resume"), 250);
+                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1YIim5XauDLMBf68C7EIfJh4-Azqbu5D3/view?usp=sharing", "Resume"), 250);
                 break;
             default:
                 setTimeout(() => appendMessage("Alex", "Sorry what did you say? Try typing in a single word like \"hi\""), 250);
