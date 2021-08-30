@@ -38,7 +38,7 @@ msgForm.addEventListener("submit", e => {
                 setTimeout(() => appendMessage("Alex", "Check out my photo series!\n", "https://alexlinaseries.wordpress.com/", "City of Stars - a series"), 250);
                 break;
             case ("experience"):
-                setTimeout(() => appendMessage("Alex", "Walmart:\nI was a software engineer intern at Walmart the summer of 2021. I worked on the Location Management feature in the Own Your Inventory application used by associates in Sam's Clubs (China and Mexico market).\nXccelerate:\n Before Walmart, I was also a SWE intern at Xccelerate, an ed-tech startup. I worked on projects for the full-stack software engineering bootcamp."), 250);
+                setTimeout(() => appendMessage("Alex", "Walmart:\nI was a software engineer intern at Walmart the summer of 2021. I worked on the Location Management feature in the Own Your Inventory application used by associates in Sam's Clubs (China and Mexico market).\n\nXccelerate:\n Before Walmart, I was also a SWE intern at Xccelerate, an ed-tech startup. I worked on projects for the full-stack software engineering bootcamp."), 250);
                 break;
             case ("project"):
                 setTimeout(() => appendMessage("Alex", "2D-World Software Engineering Design Project (Java):\nI worked with a partner to create an engine that generates an explorable 2D tile-based world (RPG style)\n\nPintOS Operating System Project (C):\nI worked with a team to implement a simplified operating system. We collaborated through Git for code reviews and this helped me become familiar with the software development workflow."), 250);
