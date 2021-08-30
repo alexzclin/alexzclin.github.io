@@ -44,7 +44,7 @@ msgForm.addEventListener("submit", e => {
                 setTimeout(() => appendMessage("Alex", "2D-World Software Engineering Design Project (Java):\nI worked with a partner to create an engine that generates an explorable 2D tile-based world (RPG style)\n\nPintOS Operating System Project (C):\nI worked with a team to implement a simplified operating system. We collaborated through Git for code reviews and this helped me become familiar with the software development workflow."), 250);
                 break;
             case ("resume"):
-                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1YIim5XauDLMBf68C7EIfJh4-Azqbu5D3/view?usp=sharing", "Resume"), 250);
+                setTimeout(() => appendMessage("Alex", "Here is my resume!\n", "https://drive.google.com/file/d/1Jfp66KXjE-61dKbwoDb5vTTsLEfBFZR1/view?usp=sharing", "Resume"), 250);
                 break;
             default:
                 setTimeout(() => appendMessage("Alex", "Sorry what did you say? Try typing in a single word like \"hi\""), 250);
